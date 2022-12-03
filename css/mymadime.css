@@ -1,0 +1,161 @@
+:root{
+    --main-color:#2196f3;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+.game{
+    background-color: #eee;
+    min-height: 100vh
+}
+.container{
+    margin: auto;
+    max-width: 900px;
+}
+.name{
+    background-color:var(--main-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.massage{
+    background-color:white;
+padding: 15px;
+margin: 15px 0;
+border-radius: 6px;
+text-align: center;
+}
+.massage span{
+ font-weight: bold;
+    color: brown;
+
+}
+.massage span::before{
+    content: " [ ";
+
+}
+.massage span::after{
+    content: " ]";
+
+}
+.start{
+    font-size: 20px;
+    font-weight:bold ;
+    text-align: center;
+    background-color:#009688;
+    padding: 20px;
+    border-radius: 6px;
+    cursor: grab;
+transition: 1s;
+color: white;
+}
+
+.start:hover{
+    background-color: chocolate;
+    padding-top: 10px;
+}
+.the_word{
+padding: 10px;
+text-align: center;
+background-color: white;
+margin: 12px 0;
+font-size: 30px;
+font-weight: bold;
+color: var(--main-color);
+user-select: none;
+border-radius: 6px;
+}
+.input{
+    margin: 15px 0;
+    width: 100%;
+    padding: 9px;
+    display: block;
+    border: 2px solid var(--main-color);
+    border-radius: 6px;
+    font-size: 18px;
+    text-align: center;
+    text-transform:capitalize;
+   
+}
+.input:focus{
+    outline: none;
+}
+.upcoming_words{
+background-color: white;
+margin:15px 0 ;
+padding: 15px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+
+}
+.upcoming_words div{
+    background-color: var(--main-color);
+     margin: 4px;
+     padding: 10px;
+     border-radius: 6px;
+     color: white;
+}
+.control{
+display: flex;
+justify-content: space-between;
+background-color: white;
+padding: 15px;
+border-radius: 6px;
+}
+.control span{
+    color: green;
+    font-weight: bold;
+}
+.finish{
+font-weight: bold;
+font-size: 40px;
+text-align: center;
+padding: 15px;
+}
+.finish .good{
+color: var(--main-color);
+}
+.finish .bad{
+color: red;
+}
+.container .radio_name{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+}
+.radio_name div{
+  padding: 10px;
+}
+.radio_name div input{
+    position: relative;
+    top: 42px;
+    left: -33px;
+}
+.radio_name div h4{
+    font-size: 14px;
+}
+@media(max-width:450px ){
+    .container .radio_name{
+        background-color: white;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .radio_name div{
+        text-align: center;
+      }
+      
+      .radio_name div input{
+        position: relative;
+        top: 42px;
+        left: -80px;
+    }
+}
